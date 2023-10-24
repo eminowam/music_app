@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../config/app_color.dart';
 
 
 class SearchWidget extends StatelessWidget {
@@ -11,10 +12,12 @@ class SearchWidget extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text("Welcome back!",
-        style: TextStyle(fontSize: 24,fontWeight: FontWeight.w500),),
+        style: TextStyle(fontSize: 24,fontWeight: FontWeight.w500,
+        color: Colors.white),),
         SizedBox(height: 8,),
         Text("What do you feel like today?",
-          style: TextStyle(fontSize: 14,fontWeight: FontWeight.w400),),
+          style: TextStyle(fontSize: 14,fontWeight: FontWeight.w400,
+          color: AppColor.textColor),),
         SizedBox(height: 24,),
         SearchBar(
           hintText: "Search song, playlist, artist...",
