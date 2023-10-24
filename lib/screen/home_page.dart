@@ -15,24 +15,27 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        width: double.infinity,
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-              colors: [
-                Color(0xff0F0817),
-                Color(0xff892FE0),
+      body: SingleChildScrollView(
+        scrollDirection: Axis.vertical,
+        child: Container(
+          width: double.infinity,
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+                colors: [
+                  Color(0xff0F0817),
+                  Color(0xff892FE0),
 
-              ],
-              begin:  FractionalOffset(0.0, 0.1),
-              end:  FractionalOffset(0.0, 1.0),
-              stops: [0.0, 3.0],
-              tileMode: TileMode.clamp),),
-        child: Column(
-          children: [
-            PageOne(),
+                ],
+                begin:  FractionalOffset(0.0, 0.1),
+                end:  FractionalOffset(0.0, 1.0),
+                stops: [0.0, 3.0],
+                tileMode: TileMode.clamp),),
+          child: Column(
+            children: [
+              PageOne(),
 
-          ],
+            ],
+          ),
         ),
       ),
 
