@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:music_app/app/screen/favorite_screen.dart';
-import 'package:music_app/app/screen/page_one.dart';
+import 'package:music_app/screen/page_one.dart';
+import 'favorite_screen.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});

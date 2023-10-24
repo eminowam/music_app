@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:music_app/app/screen/home_page.dart';
+import 'package:music_app/screen/home_page.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
         fontFamily: "OpenSans"
       ),
 
-      home:HomePage() ,
+      home: HomePage(),
     );
   }
 }
