@@ -13,9 +13,6 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.light,
         fontFamily: "OpenSans"
       ),
-      color: AppColor.backMain,
-
-
       home: HomePage(),
     );
   }

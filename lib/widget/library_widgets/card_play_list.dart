@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:music_app/config/app_style.dart';
+import 'package:music_app/screen/details_screen.dart';
 
 class CardList extends StatelessWidget {
   const CardList({
@@ -14,20 +15,25 @@ class CardList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Row(
-        children: [
-          Image(image: AssetImage(image)),
-          SizedBox(width: 10,),
-          Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(title,style: AppTextStyle.cardMainTextStyle,),
-              Text(subTitle,style:AppTextStyle.cardSecondTextStyle)
-            ],
-          )
-        ],
+    return InkWell(
+      onTap: () => Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => DetailsScreen()),),
+      child: Container(
+        child: Row(
+          children: [
+            Image(image: AssetImage(image)),
+            SizedBox(width: 10,),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(title,style: AppTextStyle.cardMainTextStyle,),
+                Text(subTitle,style:AppTextStyle.cardSecondTextStyle)
+              ],
+            )
+          ],
+        ),
       ),
     );
   }

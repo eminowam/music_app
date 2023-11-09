@@ -40,7 +40,7 @@ class DetailsScreen extends StatelessWidget {
           ),
           child: Padding(
             padding:
-                const EdgeInsets.only(top: 60, left: 10, right: 10, bottom: 20),
+                const EdgeInsets.only(top: 20, left: 10, right: 10, bottom: 20),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
@@ -73,7 +73,7 @@ class DetailsScreen extends StatelessWidget {
                 SizedBox(height: 16,),
                 CardDetails(
                     image: 'assets/images/art3.png',
-                    title: 'Pretty Girl',
+                    title: 'Pretty Girl - Cheat Codes X CADE',
                     subTitle: 'NE-YO & Shakira'),
                 SizedBox(height: 16,),
                 CardDetails(

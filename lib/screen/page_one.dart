@@ -12,7 +12,7 @@ class PageOne extends StatelessWidget {
     return SingleChildScrollView(
       scrollDirection: Axis.vertical,
       child: Padding(
-        padding: const EdgeInsets.only(top: 90,left: 15,right: 15),
+        padding: const EdgeInsets.only(top: 60,left: 15,right: 15),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
