@@ -9,12 +9,14 @@ class MainFavWidget extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Text("Your Library",style: TextStyle(color: Colors.white,fontSize: 24),),
         Row(
           children: [
-            Icon(Icons.search,color: Colors.white,size: 30,),
-            SizedBox(width: 12,),
-            Icon(Icons.add,color: Colors.white,size: 34,),
+            IconButton(
+                onPressed: (){},
+                icon: Icon(Icons.search,color: Colors.white,size: 30,)),
+            IconButton(
+                onPressed: (){},
+                icon:Icon(Icons.add,color: Colors.white,size: 34,)),
           ],
         )
       ],

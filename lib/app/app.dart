@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:music_app/config/app_color.dart';
 import 'package:music_app/screen/home_page.dart';
 
 class MyApp extends StatelessWidget {
@@ -12,6 +13,8 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.light,
         fontFamily: "OpenSans"
       ),
+      color: AppColor.backMain,
+
 
       home: HomePage(),
     );

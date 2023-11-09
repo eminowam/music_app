@@ -8,14 +8,32 @@ class MainTextWidget extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Text("Good evening",style: TextStyle(color: Colors.white,fontSize: 24),),
+        Text(
+          "Good evening",
+          style: TextStyle(color: Colors.white, fontSize: 24),
+        ),
         Row(
           children: [
-            Icon(Icons.notifications_none_outlined,color: Colors.white,),
-            SizedBox(width: 12,),
-            Icon(Icons.history,color: Colors.white,),
-            SizedBox(width: 12,),
-            Icon(Icons.settings,color: Colors.white,),
+            IconButton(
+              icon: Icon(
+                Icons.notifications_none_outlined,
+                color: Colors.white,
+              ),
+              onPressed: () {},
+            ),
+
+            IconButton(
+                onPressed: () {},
+                icon: Icon(
+                  Icons.history,
+                  color: Colors.white,
+                )),
+            IconButton(
+                onPressed: () {},
+                icon: Icon(
+                  Icons.settings,
+                  color: Colors.white,
+                )),
           ],
         )
       ],

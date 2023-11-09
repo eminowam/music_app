@@ -14,4 +14,8 @@ class AppTextStyle{
 
   static const cardSubTextStyle=
   TextStyle(fontWeight: FontWeight.w500,fontSize: 14,color: Color(0xffA5A5A5));
+
+  static const appBarTextStyle=
+      TextStyle(fontWeight: FontWeight.w600,fontSize: 23,color: Color(0xffFFFFFF));
+
 }
