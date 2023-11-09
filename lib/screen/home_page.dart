@@ -53,8 +53,6 @@ class _HomePageState extends State<HomePage> {
       bottomNavigationBar: BottomNavigationBar(
         elevation: 3,
         backgroundColor: Colors.black87,
-        showUnselectedLabels: false,
-        showSelectedLabels: false,
         selectedItemColor: Colors.white,
         unselectedItemColor: Colors.grey,
         currentIndex: _currentIndex,
@@ -67,7 +65,7 @@ class _HomePageState extends State<HomePage> {
               icon: Image.asset('assets/icons/search.png'), label: "Search"),
           BottomNavigationBarItem(
               activeIcon: Image.asset('assets/icons/library_avtive.png'),
-              icon: Image.asset('assets/icons/library.png'), label: "Library")
+              icon: Image.asset('assets/icons/library.png'), label: "Your Library")
         ],
         onTap: (index) {
           setState(() {
