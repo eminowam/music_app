@@ -9,69 +9,81 @@ class PageOne extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      scrollDirection: Axis.vertical,
+    return const SingleChildScrollView(
       child: Padding(
-        padding: const EdgeInsets.only(top: 60,left: 15,right: 15),
+        padding: EdgeInsets.only(top: 60, left: 15, right: 15),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             MainTextWidget(),
-            SizedBox(height: 16,),
+            SizedBox(
+              height: 16,
+            ),
             Row(
               children: [
                 LikedCardWidget(
-                    image: 'assets/images/art.png',
-                    text: 'Liked Songs'),
+                    image: 'assets/images/art.png', text: 'Liked Songs'),
                 LikedCardWidget(
-                    image: "assets/images/art1.png",
-                    text: 'Augisten Ft')
+                    image: "assets/images/art1.png", text: 'Augisten Ft')
               ],
             ),
-            SizedBox(height: 2,),
+            SizedBox(
+              height: 2,
+            ),
             Row(
               children: [
                 LikedCardWidget(
-                    image: 'assets/images/art2.png',
-                    text: 'Emotional Songs'),
+                    image: 'assets/images/art2.png', text: 'Emotional Songs'),
                 LikedCardWidget(
-                    image: "assets/images/art3.png",
-                    text: 'Origin/Deluxe')
+                    image: "assets/images/art3.png", text: 'Origin/Deluxe')
               ],
             ),
-           const SizedBox(height: 2,),
+            SizedBox(
+              height: 2,
+            ),
             Row(
               children: [
                 LikedCardWidget(
-                    image: 'assets/images/art4.png',
-                    text: 'Liked Songs'),
+                    image: 'assets/images/art4.png', text: 'Liked Songs'),
                 LikedCardWidget(
-                    image: "assets/images/art5.png",
-                    text: '1000 Palace')
+                    image: "assets/images/art5.png", text: '1000 Palace')
               ],
             ),
-            SizedBox(height: 40,),
+            SizedBox(
+              height: 40,
+            ),
             NewReleaseWidget(),
-            SizedBox(height: 45,),
-            Text(" Discover something new",style: TextStyle(
-                color: Colors.white,fontSize: 23,fontWeight: FontWeight.bold),),
-            SizedBox(height: 19,),
-
+            SizedBox(
+              height: 45,
+            ),
+            Text(
+              " Discover something new",
+              style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 23,
+                  fontWeight: FontWeight.bold),
+            ),
+            SizedBox(
+              height: 19,
+            ),
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
-
               child: Row(
                 children: [
                   DiscoverWidget(
                       image: 'assets/images/1.png',
                       title: 'Your weekly fresh',
                       subtitle: 'Enjoy music'),
-                  SizedBox(width: 14,),
+                  SizedBox(
+                    width: 14,
+                  ),
                   DiscoverWidget(
                       image: 'assets/images/2.png',
                       title: 'Your weekly fresh',
                       subtitle: 'Enjoy music'),
-                  SizedBox(width: 14,),
+                  SizedBox(
+                    width: 14,
+                  ),
                   DiscoverWidget(
                       image: 'assets/images/3.png',
                       title: 'Your weekly fresh',
@@ -79,7 +91,6 @@ class PageOne extends StatelessWidget {
                 ],
               ),
             )
-
           ],
         ),
       ),
